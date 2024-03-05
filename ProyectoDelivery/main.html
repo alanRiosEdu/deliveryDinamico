@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pedidos</title>
+    <link rel="icon" href="assets/image/logo.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="row">
+            <div class="col col-med-6">
+                <div class="row">
+                    <div class="col col-med-6">
+                        <a href="index.html"><img src="assets/image/atras.png" alt="" class="atras"></a>
+                    </div>
+                    <div class="col col-med-6">
+                        <h3>Cerrar Sesión</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-med-6">
+                <img src="assets/image/logo.png" alt="" class="logo">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="row">
+                <div class="col col-med-4 comida">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/image/hamburguesa.png" alt="Hamburguesa" style="width: 75px; height: 75px;">
+                        <div class="card-body">
+                        <h5 class="card-title">Hamburguesa</h5>
+                        <p class="card-text">¡Deliciosa hamburguesa con todos los ingredientes frescos!</p>
+                        <a href="#" class="btn btn-primary"></a><button>Agregar al carrito</button></a>
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="col col-med-4 comida">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/image/pizza.png" alt="Pizza" style="width: 75px; height: 75px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Pizza</h5>
+                      <p class="card-text">¡Prueba nuestra pizza recién horneada con tus ingredientes favoritos!</p>
+                      <a href="#" class="btn btn-primary"></a><button>Agregar al carrito</button></a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col col-med-4 comida">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/image/sushi.png" alt="Sushi" style="width: 75px; height: 75px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Sushi</h5>
+                      <p class="card-text">¡Disfruta de la frescura del sushi con nuestra selección especial!</p>
+                      <a href="#" class="btn btn-primary"></a><button>Agregar al carrito</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br>
+    <footer>
+        <section>
+            <div class="row">
+                <div class="col col-med-3 ">
+                    <a href="https://www.facebook.com/" target="_blank" class="facebook">
+                        <img src="assets/image/facebook.png" alt="facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="assets/image/instagram.png" alt="instagram">
+                    </a>
+                    <a href="https://twitter.com/AlanHdRios" target="_blank">
+                        <img src="assets/image/x.png" alt="x">
+                    </a>
+                    <a href="https://wa.link/ckyzqp" target="_blank">
+                        <img src="assets/image/whatsapp.png" alt="whatsapp">
+                    </a>
+                </div>
+                <div class="col col-med-6"></div>
+                <div class="col col-med-3">
+                    <p>&copy; <span id="año"></span> Pedidos Flash Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </section>
+        <script>
+            const añoActual = new Date().getFullYear();
+            document.getElementById('año').innerText = añoActual;
+        </script>
+    </footer> 
+    
+</body>
+</html>

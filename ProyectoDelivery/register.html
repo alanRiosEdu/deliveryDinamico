@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta</title>
+    <link rel="icon" href="assets/image/logo.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="row">
+            <div class="col col-med-6">
+                <div class="row">
+                    <div class="col col-med-6">
+                        <a href="index.html"><img src="assets/image/atras.png" alt="" class="atras"></a>
+                    </div>
+                    <div class="col col-med-6">
+                        <h3>Atras</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-med-6">
+                <img src="assets/image/logo.png" alt="" class="logo">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col col-med-6" style="background-color: #EEF5FF; width: 100vh; height: 100vh; backdrop-filter: blur(100vh);">
+                    <p class="leyenda">¡Disfruta de entregas gratuitas por hasta 15 días en tus primeros pedidos en restaurantes al realizar el pago con tarjeta!</p>
+                    <img src="assets/image/sushi.png" alt="sushi">
+                </div>
+                <div class="col col-med-6" style="background-color: #B4D4FF; width: 100vh; height: 100vh; backdrop-filter: blur(100vh);">
+                    <h3 style="text-align: center;">Crear cuenta</h3>
+                    <form style="text-align: center;">
+                        <label for="nombres">Nombres:</label>
+                        <input type="text" id="nombres" name="nombres" required>
+
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" required>
+
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" id="contrasena" name="contrasena" required>
+
+                        <label for="confirmar-contrasena">Confirmar Contraseña:</label>
+                        <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required>
+
+                        <button type="submit">Crear Cuenta</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <section>
+            <div class="row">
+                <div class="col col-med-3 ">
+                    <a href="https://www.facebook.com/" target="_blank" class="facebook">
+                        <img src="assets/image/facebook.png" alt="facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="assets/image/instagram.png" alt="instagram">
+                    </a>
+                    <a href="https://twitter.com/AlanHdRios" target="_blank">
+                        <img src="assets/image/x.png" alt="x">
+                    </a>
+                    <a href="https://wa.link/ckyzqp" target="_blank">
+                        <img src="assets/image/whatsapp.png" alt="whatsapp">
+                    </a>
+                </div>
+                <div class="col col-med-6"></div>
+                <div class="col col-med-3">
+                    <p>&copy; <span id="año"></span> Pedidos Flash Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </section>
+        <script>
+            const añoActual = new Date().getFullYear();
+            document.getElementById('año').innerText = añoActual;
+        </script>
+    </footer> 
+    
+</body>
+</html>

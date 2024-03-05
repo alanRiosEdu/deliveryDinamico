@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrativo</title>
+    <link rel="icon" href="assets/image/logo.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="row">
+            <div class="col col-med-6">
+                <div class="row">
+                    <div class="col col-med-6">
+                        <a href="index.html"><img src="assets/image/atras.png" alt="" class="atras"></a>
+                    </div>
+                    <div class="col col-med-6">
+                        <h3>Cerrar Sesión</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-med-6">
+                <img src="assets/image/logo.png" alt="" class="logo">
+            </div>
+        </div>
+    </header>
+    <br>
+    <main>
+        <form id="formulario">
+            <label for="nombre_producto">Nombre del producto:</label><br>
+            <input type="text" id="nombre_producto" name="nombre_producto" required><br>
+            <label for="descripcion_producto">Descripción del producto:</label><br>
+            <textarea id="descripcion_producto" name="descripcion_producto" required></textarea><br>
+            <label for="imagen_producto">Link de una imagen del producto:</label><br>
+            <input type="text" name="imagen_producto" id="imagen_producto" required>
+            <div>
+                <button type="submit" class="btn btn-primary mb-3">Registrar</button>
+            </div>
+        </form>
+        <div class="row" id="new-product">
+            <!-- Aquí se recuperan los datos -->
+        </div>
+    </main>
+    <br>
+    <footer>
+        <section>
+            <div class="row">
+                <div class="col col-med-3 ">
+                    <a href="https://www.facebook.com/" target="_blank" class="facebook">
+                        <img src="assets/image/facebook.png" alt="facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="assets/image/instagram.png" alt="instagram">
+                    </a>
+                    <a href="https://twitter.com/AlanHdRios" target="_blank">
+                        <img src="assets/image/x.png" alt="x">
+                    </a>
+                    <a href="https://wa.link/ckyzqp" target="_blank">
+                        <img src="assets/image/whatsapp.png" alt="whatsapp">
+                    </a>
+                </div>
+                <div class="col col-med-6"></div>
+                <div class="col col-med-3">
+                    <p>&copy; <span id="año"></span> Pedidos Flash Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </section>
+        <script>
+            const añoActual = new Date().getFullYear();
+            document.getElementById('año').innerText = añoActual;
+        </script>
+    </footer>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

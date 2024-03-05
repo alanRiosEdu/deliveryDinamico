@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Flash</title>
+    <link rel="icon" href="assets/image/logo.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="encabezado-index">
+        <div class="row">
+            <div class="col col-med-4">
+                <div class="row">
+                    <div class="col col-med-6">
+                        <img src="assets/image/logo.png" alt="Logo de Delivery Flash" class="logo">
+                    </div>
+                    <div class="col col-med-6">
+                        <div class="row">
+                            <div class="col col-med-6">
+                                <img src="assets/image/ubicacion.png" alt="ubicacion" class="ubicacion">
+                            </div>
+                            <div class="col col-med-6">
+                                <h3>Quito</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-med-4">
+                <h1>Delivery Flash</h1>
+            </div>
+            <div class="col col-med-4">
+                <div class="row">
+                    <div class="col col-med-6">
+                        <img src="assets/image/usuario.png" alt="inisiar sesion" class="usuario">
+                    </div>
+                    <div class="col col-med-6">
+                        <a href="login.html" target="Iniciar sesion">
+                            <button>Iniciar sesión</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col col-med-6">
+                    <img src="assets/image/hamburguesa.png" alt="">
+                </div>
+                <div class="col col-med-6">
+                    <p class="leyenda">¡Disfruta de entregas gratuitas por hasta 15 días en tus primeros pedidos en restaurantes al realizar el pago con tarjeta!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section>
+            <div class="row">
+                <div class="col col-med-3 ">
+                    <a href="https://www.facebook.com/" target="_blank" class="facebook">
+                        <img src="assets/image/facebook.png" alt="facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="assets/image/instagram.png" alt="instagram">
+                    </a>
+                    <a href="https://twitter.com/AlanHdRios" target="_blank">
+                        <img src="assets/image/x.png" alt="x">
+                    </a>
+                    <a href="https://wa.link/ckyzqp" target="_blank">
+                        <img src="assets/image/whatsapp.png" alt="whatsapp">
+                    </a>
+                </div>
+                <div class="col col-med-6"></div>
+                <div class="col col-med-3">
+                    <p>&copy; <span id="año"></span> Pedidos Flash Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </section>
+        <script>
+            const añoActual = new Date().getFullYear();
+            document.getElementById('año').innerText = añoActual;
+        </script>
+    </footer> 
+</body>
+</html>

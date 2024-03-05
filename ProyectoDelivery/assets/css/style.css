@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+}
+
+main {
+    background-color: #fff;
+}
+
+header{
+    background-color: #86B6F6;
+    color: white;
+    padding: 10px;
+}
+
+footer{
+    background-color: #86B6F6;
+    color: white;
+    padding: 10px;
+}
+
+.leyenda{
+    margin: 0;
+    font-size: 45px;
+    justify-content: space-between;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col {
+    padding: 10px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+}
+
+.ubicacion{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.usuario {
+    max-width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #176B87;
+    color: white;
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
